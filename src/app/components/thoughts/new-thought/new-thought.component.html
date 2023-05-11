@@ -1,0 +1,59 @@
+<section class="container criar-pensamentos ff-inter">
+    <header class="header">
+        <h2> Add a <br /> new thought: </h2>
+    </header>
+    <form>
+        <label for="pensamento">Thought</label>
+        <input type="textarea" class="input" id="thought" name="thought" placeholder="Enter your thought"
+            [value]="thought.content">
+        <label for="autoria">Authorship or source </label>
+        <input type="textarea" class="input" id="Authorship" name="Authorship" placeholder="Enter your authorship"
+            [value]="thought.authorship">
+        <label for="modelo"> Select the card model:</label>
+        <div class="container-radio">
+            <div class="radio-modelo">
+                <label for="model1">
+                    <input type="radio" id="model1" value="model1" name="model-card" />
+                    <div class="custom-radio"><span></span></div>
+                    <span>Model 1</span>
+                </label>
+                Preview:
+                <div class="modelo modelo1 ff-roboto-mono">
+                    <img src="../../../../assets/images/modelo1.png" alt="Blue quotation marks">
+                    <p class="conteudo">{{ thought.content }}</p>
+                    <b class="autoria">{{ thought.authorship }}</b>
+                </div>
+            </div>
+            <div class="radio-modelo">
+                <label for="model2">
+                    <input type="radio" id="model2" value="model2" name="model-card" />
+                    <div class="custom-radio"><span></span></div>
+                    <span>Model 2</span>
+                </label>
+                Preview:
+                <div class="modelo modelo1 ff-roboto-mono">
+                    <img src="../../../../assets/images/modelo2.png" alt="Light blue quotation marks">
+                    <p class="conteudo">{{ thought.content }}</p>
+                    <b class="autoria">{{ thought.authorship }}</b>
+                </div>
+            </div>
+            <div class="radio-modelo">
+                <label for="model3">
+                    <input type="radio" id="model3" value="model3" name="model-card" />
+                    <div class="custom-radio"><span></span></div>
+                    <span>Model 3</span>
+                </label>
+                Preview:
+                <div class="modelo modelo1 ff-roboto-mono">
+                    <img src="../../../../assets/images/modelo3.png" alt="Green quotation marks">
+                    <p class="conteudo">{{ thought.content }}</p>
+                    <b class="autoria">{{ thought.authorship }}</b>
+                </div>
+            </div>
+        </div>
+        <div class="acoes">
+            <button class="botao"> Save </button>
+            <button class="botao"> Cancel </button>
+        </div>
+    </form>
+</section>
