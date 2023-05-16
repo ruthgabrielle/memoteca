@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewThoughtComponent } from './components/thoughts/new-thought/new-thought.component';
+import { FormsModule } from '@angular/forms';
+import { ListThoughtsComponent } from './components/thoughts/list-thoughts/list-thoughts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NewThoughtComponent
+    NewThoughtComponent,
+    ListThoughtsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,8 +10,16 @@ export class NewThoughtComponent implements OnInit {
     id: '1',
     content: 'Learning Angular',
     authorship: 'dev',
-    model: 'model1',
+    model: 'model2',
   };
 
   ngOnInit(): void {}
+
+  newThought(){
+    alert('Novo pensamento criado')
+  }
+
+  cancelThought(){
+    alert(' pensamento excluido')
+  }
 }
